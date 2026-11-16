@@ -3,14 +3,14 @@
 --entity
 library ieee;
 use ieee.std_logic_1164.all;
-entity example1a is 
+entity exercise1a is 
     port(A, B : in std_logic;
-        output  : out std_logic
+        y  : out std_logic
         );
-end example1a;
+end exercise1a;
 
 --concurrent architecture
-architecture conc of example1a is
+architecture conc of exercise1a is
 begin
-    output  <= ((not A) and B) OR A OR (A AND (NOT B));
+    y  <= ((not A) and B) OR A OR (A AND (NOT B));
 end conc;
