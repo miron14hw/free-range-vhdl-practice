@@ -13,11 +13,13 @@ entity exe3 is
 
 --architecture concurrent
 architecture conc of exe3 is 
+begin
     and_out <= a(0) and a(1) and a(2) and a(3) and a(4) and a(5) and a(6) and a(7);
 end conc;
 
 --architecture conditional signal assignment 
 architecture cond of exe3 is 
+begin
     and_out <= '1' when a(0) ='1' and a(1) ='1' and a(2) ='1' and a(3) ='1' and a(4) ='1' and a(5) ='1' and a(6) ='1' and a(7) ='1' else 
                '0' ;
     end cond;
