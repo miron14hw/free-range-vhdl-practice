@@ -12,7 +12,7 @@ entity exe4 is
     end exe4;
 
 --architecture concurrent
-architecture conc of exe3 is 
+architecture conc of exe4 is 
 begin
     or_out <= a(0) or a(1) or a(2) or a(3) or a(4) or a(5) or a(6) or a(7);
 end conc;
@@ -28,6 +28,6 @@ begin
 architecture sigas of exe4 is 
 begin
     with a select
-    and_out <= '0' when "00000000",
+    or_out <= '0' when "00000000",
                '1' when others;
 end sigas;
