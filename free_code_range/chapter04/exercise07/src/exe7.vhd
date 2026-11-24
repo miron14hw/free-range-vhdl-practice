@@ -13,14 +13,14 @@ entity exe7 is
 --architecture concurrent
 architecture conc of exe7 is
 begin
-    deco(0) <= ((not a(0)) and  (not a(1)) and (not a(2))); 
-    deco(1) <= (a(0) and  (not a(1)) and (not a(2)));
-    deco(2) <= ((not a(0)) and  a(1) and (not a(2)));
-    deco(3) <= (a(0) and   a(1) and (not a(2)));
-    deco(4) <= ((not a(0)) and  (not a(1)) and  a(2));
-    deco(5) <= (a(0) and  (not a(1)) and a(2));
-    deco(6) <= ((not a(0)) and  a(1) and  a(2));
-    deco(7) <= (a(0) and   a(1) and  a(2));
+    deco(0) <= not ((not a(0)) and  (not a(1)) and (not a(2))); 
+    deco(1) <= not (a(0) and  (not a(1)) and (not a(2)));
+    deco(2) <= not ((not a(0)) and  a(1) and (not a(2)));
+    deco(3) <= not (a(0) and   a(1) and (not a(2)));
+    deco(4) <= not ((not a(0)) and  (not a(1)) and  a(2));
+    deco(5) <= not (a(0) and  (not a(1)) and a(2));
+    deco(6) <= not ((not a(0)) and  a(1) and  a(2));
+    deco(7) <= not (a(0) and   a(1) and  a(2));
 end conc;
 --architecture conditional 
 architecture cond of exe7 is 
