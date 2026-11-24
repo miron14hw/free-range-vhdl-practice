@@ -5,7 +5,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 --entity
 entity exe6 is 
-    port( a : in std_logic_vector(2 downto 0)
+    port( a : in std_logic_vector(2 downto 0);
           deco : out std_logic_vector (7 downto 0)
         );
     end exe6;
